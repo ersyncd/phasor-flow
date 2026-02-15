@@ -1,42 +1,40 @@
-# sv
+# ⚡ PhasorFlow
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+![ScreenShot](./image.png)
 
-## Creating a project
+[![Svelte](https://img.shields.io/badge/Svelte-5%20(Stable)-FF3E00?logo=svelte&logoColor=white)](https://svelte.dev/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-v4-38B2AC?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Math.js](https://img.shields.io/badge/Math.js-1F1F1F?logo=mathworks&logoColor=white)](https://mathjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 
-If you're seeing this, you've probably already done this step. Congrats!
+**PhasorFlow** is a modern, real-time *Scratchpad* for Electrical Engineering students. It instantly computes Complex Numbers (Impedance) and Phasors—swapping the old scientific calculator for a clean, cyber‑tech web interface. 🌊📐
 
-```sh
-# create a new project
-npx sv create my-app
-```
+## Why this exists ⚡
 
-To recreate this project with the same configuration:
+AC Circuits are hard enough without juggling a calculator, scratch paper, and 20 tabs. PhasorFlow exists to help EE students survive labs and exams with fast, visual, and trustworthy phasor math—all in one place.
 
-```sh
-# recreate this project
-npx sv create --template minimal --types ts --add tailwindcss="plugins:none" sveltekit-adapter="adapter:vercel" --install npm phasor-flow
-```
+## Key features 🚀
 
-## Developing
+- **Smart Input Parsing:** Handles $j$ notation flexibly (e.g., `10+j5`, `5j`, or `j5`).
+- **Parallel Impedance Operator:** Supports the custom `||` operator logic (e.g., `(10+5j) || (20+10j)`).
+- **Step-by-Step Breakdown:** Shows the flow Magnitude → Phase Angle → Polar Form like a “Photomath for EE”.
+- **Phasor Visualizer:** Renders a dynamic SVG vector on a complex plane.
+- **History System:** Saves recent calculations to local storage.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## How to run 🧪
 
-```sh
-npm run dev
+1. Install dependencies:
+	- `npm install`
+2. Start the dev server:
+	- `npm run dev`
+3. Build for production:
+	- `npm run build`
+4. Preview the build:
+	- `npm run preview`
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## Author 👤
 
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+**Teguh Ersyarudin (ersync)**  
+Electrical Engineering Student & Web Developer  
+GitHub: [@ersyncd](https://github.com/ersyncd)
